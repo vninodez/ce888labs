@@ -1,6 +1,6 @@
 # ce888labs
 
-Exercise 1 - Plotting
+**Exercise 1 - Plotting**
 
 The code for this exercise can be found in the folder Exercise 1 - Plotting, in the file vehicles.py.
 
@@ -28,7 +28,7 @@ A scatterplot is also computed:
 
 ![logo](./scaterplot.png?raw=true)
 
-Exercise 2 - Bootstrap
+**Exercise 2 - Bootstrap**
 
 The code for this exercise can be found in the folder Exercise 2 - Bootstrap, in the file bootstrap.py.
 

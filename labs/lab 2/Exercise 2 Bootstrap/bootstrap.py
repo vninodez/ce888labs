@@ -5,9 +5,23 @@ import seaborn as sns
 import numpy as np
 
 
-def boostrap(sample, sample_size, iterations):
-	# <---INSERT YOUR CODE HERE--->
-	return data_mean, lower, upper
+
+def boostrap(sample, sample_size, iterations,ciparam):
+    sample_matrix=np.zeros((iterations,sample_size))
+    data_mean_mx=np.zeros(iterations)
+    for i in range(iterations):
+        sample_matrix[i, :]=np.random.choice(sample, size=sample_size, replace=True)
+        data_mean_mx[i]=np.mean(sample_matrix[i, :])
+    lower=np.percentile(data_mean_mx,ciparam/2)
+    upper=np.percentile(data_mean_mx,100-ciparam/2)
+    data_mean=np.mean(data_mean_mx)
+    print(data_mean_mx)
+    return data_mean, lower, upper
+
+sample=np.arange(10,1000,2)
+sample_size=100
+iterations=10
+boostrap(sample, sample_size, iterations)
 
 
 if __name__ == "__main__":

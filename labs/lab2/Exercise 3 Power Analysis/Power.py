@@ -32,9 +32,3 @@ resample2=np.random.choice(join_sample, size=sample2.shape[0], replace=True)
 np.mean(resample1)-np.mean(resample2)
 
     
-    
-#□ 1: Repeat reps times:
-□ 1.a: generate a new sample from the first sample
-□ 1.b: Generate a new sample form the second sample
-□ 1.c: Compare the two samples and calculate the p-value
-□ 2: Return the percentage of times that the p-value was < 1-alpha
